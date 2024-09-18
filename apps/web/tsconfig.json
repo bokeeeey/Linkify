@@ -1,4 +1,11 @@
 {
+  // "compilerOptions": {
+  //   "strict": true,
+  //   "baseUrl": "./",
+  //   "paths": {
+  //     "@components/*": ["src/components/*"]
+  //   }
+  // }, 모노레포 폴더구조를 아직 몰라서 주석처리
   "extends": "@repo/typescript-config/vite.json",
   "include": ["src"]
 }
