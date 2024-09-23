@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
@@ -10,5 +11,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^14.2.13",
+    "@vercel/style-guide": "latest",
+    "eslint-config-turbo": "latest"
   }
 }
