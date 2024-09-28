@@ -1,5 +1,0 @@
-{
-  "extends": "@repo/typescript-config/base.json",
-  "include": [".", "../../apps/web/postcss.config.ts"],
-  "exclude": ["dist", "build", "node_modules"]
-}
