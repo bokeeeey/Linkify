@@ -4,5 +4,11 @@
     "jsx": "react-jsx"
   },
   "extends": "@repo/typescript-config/vite.json",
-  "include": ["src", "vite.config.ts", "packages/ui/**/*"]
+  "include": [
+    "src",
+    "vite.config.ts",
+    "packages/ui/**/*",
+    "postcss.config.ts",
+    "tailwind.config.ts"
+  ]
 }
