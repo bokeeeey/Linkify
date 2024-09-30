@@ -5,11 +5,14 @@ const project = resolve(process.cwd(), "tsconfig.json");
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
+    require.resolve("@vercel/style-guide/eslint/next"),
     "eslint:recommended",
     "prettier",
-    require.resolve("@vercel/style-guide/eslint/next"),
     "turbo",
   ],
+  parserOptions: {
+    project,
+  },
   globals: {
     React: true,
     JSX: true,
@@ -31,5 +34,8 @@ module.exports = {
     ".*.js",
     "node_modules/",
   ],
+  rules: {
+    "import/no-default-export": "off",
+  },
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
 };
