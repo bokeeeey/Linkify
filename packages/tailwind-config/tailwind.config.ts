@@ -5,6 +5,7 @@ const config: Omit<Config, "content"> = {
     extend: {
       colors: {
         "custom-blue": "#007bff",
+        primary: "#6D6AFE",
       },
     },
   },

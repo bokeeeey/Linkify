@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <div className="text-custom-blue">
+      <div className="text-primary text-3xl">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -18,7 +18,9 @@ export default function App() {
         Click on the Vite and React logos to learn more
       </p>
       <main>
-        <div className="text-custom-blue">테일윈드 확인용</div>
+        <div className={"text-custom-blue bg-yellow-200 p-6 rounded-md"}>
+          테일윈드 확인용
+        </div>
       </main>
     </>
   );
