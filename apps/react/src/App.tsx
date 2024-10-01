@@ -1,10 +1,14 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useState } from "react";
+
+const queryClient = new QueryClient();
 
 export default function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <h1>Vite + React</h1>
       <div className="text-primary text-3xl">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -18,10 +22,9 @@ export default function App() {
         Click on the Vite and React logos to learn more
       </p>
       <main>
-        <div className={"text-custom-blue bg-yellow-200 p-6 rounded-md"}>
-          테일윈드 확인용
-        </div>
+        <div className="text-primary">테일윈드 확인용</div>
       </main>
-    </>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }

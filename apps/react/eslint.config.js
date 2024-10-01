@@ -34,6 +34,11 @@ export default tseslint.config(
       ],
       "react/prop-types": "off", // TypeScript 사용 시 prop-types를 끄는 설정
       "react/react-in-jsx-scope": "off", // React 17+에서는 import가 필요 없음
+
+      // TanStack Query 규칙 적용
+      "@tanstack/query/exhaustive-deps": "warn", // exhaustive-deps 체크
+      "@tanstack/query/no-explicit-generics": "warn", // 명시적 제네릭 사용 금지
+      "@tanstack/query/prefer-query-object-syntax": "warn", // Query 객체 구문을 선호
     },
   }
 );
