@@ -16,7 +16,7 @@ module.exports = {
     "turbo",
     "plugin:@tanstack/eslint-plugin-query/recommended",
   ],
-  plugins: ["only-warn", "@tanstack/query"],
+  plugins: ["only-warn", "@tanstack/query", "prettier"],
   globals: {
     React: true,
     JSX: true,
