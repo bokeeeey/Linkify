@@ -1,13 +1,12 @@
 message="$(cat $1)"
-requiredPattern="^(Feat|Fix|Docs|Style|Refactor|Chore|Test|Build|Merge|Setting|Deploy):.*$"
+requiredPattern="^(Feat|Fix|Docs|Style|Refactor|Chore|Test|Build|Merge|Setting|Deploy|Remove):.*$"
 if ! [[ $message =~ $requiredPattern ]];
 then
   echo "=========================================================================="
   echo "======================   🚨 진심입니까 휴먼...?   ========================"
   echo "=========================================================================="
   echo "= Format should be => [header]: [What was done for Why]                 =="
-  echo "= Allowed Headers: Feat|Fix|Docs|Style|Refactor|Chore|Test|Build|Merge|Setting|Deploy ="
-  echo "== EXAMPLE => Feat: Google login을 구현하였습니다                        =="
+  echo "== EXAMPLE => Feat: Google login을 구현하였습니다                       =="
   echo "=========================================================================="
   echo "== Your commit message was =>" $message 
   echo "== For more information, check script in .husky/commit-msg or README.md =="
