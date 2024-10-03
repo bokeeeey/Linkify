@@ -158,6 +158,9 @@ importers:
       globals:
         specifier: ^15.9.0
         version: 15.9.0
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2))
       postcss:
         specifier: ^8.4.47
         version: 8.4.47
@@ -285,6 +288,9 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.3.3))
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
@@ -6741,7 +6747,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
-    optional: true
 
   '@jest/core@29.7.0(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2))':
     dependencies:
@@ -8455,7 +8460,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
-    optional: true
 
   create-jest@29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2)):
     dependencies:
@@ -10145,7 +10149,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
-    optional: true
 
   jest-cli@29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2)):
     dependencies:
@@ -10196,7 +10199,6 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
-    optional: true
 
   jest-config@29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2)):
     dependencies:
@@ -10470,7 +10472,6 @@ snapshots:
       - babel-plugin-macros
       - supports-color
       - ts-node
-    optional: true
 
   jest@29.7.0(@types/node@20.11.24)(ts-node@10.9.1(@swc/core@1.7.26(@swc/helpers@0.5.5))(@types/node@20.11.24)(typescript@5.6.2)):
     dependencies:

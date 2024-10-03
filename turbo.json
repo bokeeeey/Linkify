@@ -17,7 +17,7 @@
     "test": {
       "dependsOn": ["^build"]
     },
-    "test:react": {
+    "test:watch": {
       "cache": false,
       "persistent": true
     }

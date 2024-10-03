@@ -1,8 +1,9 @@
-type ButtonProps = {
-  label: string;
-  onClick: () => void;
-};
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
-export default function Button({ label, onClick }: ButtonProps) {
-  return <button onClick={onClick}>{label}</button>;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+}
+
+export default function Button({ children, ...rest }: ButtonProps) {
+  return <button {...rest}>{children}</button>;
 }

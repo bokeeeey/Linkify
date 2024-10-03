@@ -9,8 +9,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "react": "pnpm --filter react dev",
     "prepare": "husky",
-    "test:react": "turbo run test:react --watch",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
