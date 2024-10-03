@@ -1,5 +1,5 @@
 {
-  "name": "01.linkify",
+  "name": "linkify",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "react": "pnpm --filter react dev",
     "prepare": "husky",
-    "test:react": "pnpm --filter react test",
+    "test:react": "turbo run test:react --watch",
     "test": "turbo run test"
   },
   "devDependencies": {
@@ -22,7 +22,15 @@
     "husky": "^9.1.6",
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.13",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
@@ -31,5 +39,6 @@
   "dependencies": {
     "@tanstack/react-query": "^5.56.2",
     "@tanstack/react-query-devtools": "^5.58.0"
-  }
+  },
+  "prettier": "@org/prettier-config"
 }
