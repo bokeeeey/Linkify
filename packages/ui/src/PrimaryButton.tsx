@@ -7,7 +7,11 @@ interface PrimaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function PrimaryButton({ children, ...rest }: PrimaryButtonProps) {
   return (
-    <button className="text-pink-500" {...rest}>
+    <button
+      className="px-200
+    py-20 bg-blue"
+      {...rest}
+    >
       {children}
     </button>
   );
