@@ -1,9 +1,14 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface PrimaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  className?: string;
 }
 
-export default function PrimaryButton({ children, ...rest }: ButtonProps) {
-  return <button {...rest}>{children}</button>;
+export default function PrimaryButton({ children, ...rest }: PrimaryButtonProps) {
+  return (
+    <button className="text-pink-500" {...rest}>
+      {children}
+    </button>
+  );
 }

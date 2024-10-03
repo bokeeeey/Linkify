@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Omit<Config, 'content'> = {
+  darkMode: ['selector'],
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,7 @@ const config: Omit<Config, 'content'> = {
         'gray-40': '#D0D8E3',
         'gray-20': '#E6EBF4',
         bg: '#EFF1F4',
+        blue: '#4C91FF',
       },
     },
   },
